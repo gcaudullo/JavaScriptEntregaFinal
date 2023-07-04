@@ -85,7 +85,7 @@ productos.push(new producto(idUniversal++, "Sony Playstation 5 825Gb FIFA 23 bun
 productos.push(new producto(idUniversal++, "Xiaomi TV 65\"", "./img/tv-video/xiaomi-tv-p1e-65-lm-xiaomi-tv-p1e-65-lm.jpg", "xiaomi-tv-p1e-65-lm", "TV y Audio", 899));
 
 
-const contenedorProductos = document.querySelector(".contenedor-productos")
+const contenedorProductos = document.querySelector("#contenedor-productos")
 console.log(contenedorProductos);
 
 function cargarProductos() {
