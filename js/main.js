@@ -89,6 +89,7 @@ const contenedorProductos = document.querySelector("#contenedor-productos")
 const botonesCat = document.querySelectorAll(".btn-cat")
 const tituloPrincipal = document.querySelector("#titulo-principal");
 
+
 function cargarProductos(productos) {
     contenedorProductos.innerHTML="";
     productos.forEach(producto => {
