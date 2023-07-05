@@ -10,7 +10,6 @@
 </head>
 
 <body>
-    <script src="./js/main.js"></script>
     <div class="wrapper">
         <aside>
             <header>
@@ -18,13 +17,13 @@
             </header>
             <nav>
                 <ul class="menu">
-                    <li><button class="boton-menu active"><i class="bi bi-hand-index-fill"></i> Todos los
+                    <li><button id="Todos" class="boton-menu btn-cat active"><i class="bi bi-hand-index-fill"></i> Todos los
                             productos</button>
                     </li>
-                    <li><button class="boton-menu"><i class="bi bi-hand-index"></i> Notebooks</button></li>
-                    <li><button class="boton-menu"><i class="bi bi-hand-index"></i> Celulares</button></li>
-                    <li><button class="boton-menu"><i class="bi bi-hand-index"></i> Electrodomesticos</button></li>
-                    <li><button class="boton-menu"><i class="bi bi-hand-index"></i> TV y Video</button></li>
+                    <li><button id="Notebooks" class="boton-menu btn-cat"><i class="bi bi-hand-index"></i> Notebooks</button></li>
+                    <li><button id="Celulares y Tecnología" class="boton-menu btn-cat"><i class="bi bi-hand-index"></i> Celulares y Tecnología</button></li>
+                    <li><button id="Electrodomesticos" class="boton-menu btn-cat"><i class="bi bi-hand-index"></i> Electrodomésticos</button></li>
+                    <li><button id="TV y Audio" class="boton-menu btn-cat"><i class="bi bi-hand-index"></i> TV y Video</button></li>
                     <li><a class="boton-contactenos boton-menu" href="./pages/contactenos.html"><i
                                 class="bi bi-hand-index"></i> Contáctenos</li>
                     <li><a class="boton-carrito boton-menu" href="./pages/carrito.html"><i
@@ -36,47 +35,13 @@
             </footer>
         </aside>
         <main>
-            <h2 class="titulo-principal">Todos nuestros productos</h2>
+            <h2 id="titulo-principal" class="titulo-principal">Todos nuestros productos</h2>
             <div id="contenedor-productos" class="contenedor-productos">
-                <div class="producto">
-                    <img class="producto-imagen" src="./img/xiaomi-redmi-10a-dual-sim-64-gb-plata-cromada-3-gb-ram.jpg"
-                        alt="Celular Xiaomi Redmi Note 10">
-                    <div class="producto-detalles">
-                        <h3 class="producto-nombre">xiaomi redmi 10a dual sim 64gb </h3>
-                        <p class="producto-precio"><strong>USD 140</strong></p>
-                        <button class="producto-agregar">Agregar</button>
-                    </div>
-                </div>
-                <div class="producto">
-                    <img class="producto-imagen"
-                        src="./img/mixer-enxuta-sdaenxm4399-negro-y-acero-inoxidable-220v-600w.jpg"
-                        alt="Mixer Enxuta 220V 600W">
-                    <div class="producto-detalles">
-                        <h3 class="producto-nombre">Mixer Enxuta sdaenxm4399 </h3>
-                        <p class="producto-precio"><strong>USD 43</strong></p>
-                        <button class="producto-agregar">Agregar</button>
-                    </div>
-                </div>
-                <div class="producto">
-                    <img class="producto-imagen" src="./img/plancha-a-vapor-enxuta.jpg" alt="Plancha a vapor Enxuta">
-                    <div class="producto-detalles">
-                        <h3 class="producto-nombre">Plancha a Vapor Enxuta Sdaenxp284 </h3>
-                        <p class="producto-precio"><strong>USD 99</strong></p>
-                        <button class="producto-agregar">Agregar</button>
-                    </div>
-                </div>
-                <div class="producto">
-                    <img class="producto-imagen" src="./img/control-de-microsoft-xbox-core-shock-blue.jpg"
-                        alt="Control de Microsoft Xbox core shock blue">
-                    <div class="producto-detalles">
-                        <h3 class="producto-nombre">Control de Microsoft Xbox core shock blue</h3>
-                        <p class="producto-precio"><strong>USD 99</strong></p>
-                        <button class="producto-agregar">Agregar</button>
-                    </div>
-                </div>
+                <!-- Este código se rellena con con el JavaScript -->
             </div>
         </main>
     </div>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>

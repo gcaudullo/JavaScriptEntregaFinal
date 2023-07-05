@@ -12,19 +12,19 @@ class producto {
     }
 }
 /*CARGO CELULARES A MI ARRAY DE PRODUCTOS*/
-productos.push(new producto(idUniversal++, "Apple Ipad 10 9 10th gen wifi 256Gb pink mpqc3ll", "./img/cel-tecno/apple-ipad-10-9-10th-gen-wifi-256gb-pink-mpqc3ll-a-apple-ipad-10-9-10th-gen-wifi-256gb-pink-mpqc3ll-a-959.webp", "apple-ipad-10-9-10th-gen-wifi-256gb-pink-mpqc3ll", "Celulares", 959));
-productos.push(new producto(idUniversal++, "Apple Watch se 2nd gen gps 44mm starlight temp sense", "./img/cel-tecno/apple-watch-se-2nd-gen-gps-44mm-starlight-aluminum-case-mnte3lla-apple-watch-se-2nd-gen-gps-44mm-starlight-aluminum-case-mnte3lla-479.webp", "apple-watch-se-2nd-gen-gps-44mm-starlight", "Celulares", 479));
-productos.push(new producto(idUniversal++, "Apple Watch series 8 gps 41mm midnigh temp sense", "./img/cel-tecno/apple-watch-series-8-gps-41mm-midnight-aluminum-case-mnu73-mnu83-apple-watch-series-8-gps-41mm-midnight-aluminum-case-mnu73-mnu83-649.webp", "apple-watch-series-8-gps-41mm-midnight", "Celulares", 649));
-productos.push(new producto(idUniversal++, "Cel Samsung Galaxy A04 sm a045mz ds 64Gb", "./img/cel-tecno/cel-samsung-galaxy-a04-sm-a045mz-ds-64gb-green-cel-samsung-galaxy-a04-sm-a045mz-ds-64gb-green-179.webp", "cel-samsung-galaxy-a04-sm-a045mz-ds-64gb", "Celulares", 179));
-productos.push(new producto(idUniversal++, "Cel Samsung Galaxy A525 8Gb 256Gb", "./img/cel-tecno/cel-samsung-galaxy-a525-8gb-256gb-ds-white-cel-samsung-galaxy-a525-8gb-256gb-ds-white-499.webp", "cel-samsung-galaxy-a525-8gb-256gb", "Celulares", 499));
-productos.push(new producto(idUniversal++, "Celular Honor X6 color azul 4Gb 64Gb", "./img/cel-tecno/celular-honor-x6-color-azul-4gb-64gb-celular-honor-x6-color-azul-4gb-64gb-189.webp", "celular-honor-x6-color-azul-4gb-64gb", "Celulares", 189));
-productos.push(new producto(idUniversal++, "Celular Huawei Nova 9 128Gb 8Gb black", "./img/cel-tecno/celular-huawei-nova-9-128gb-8gb-black-celular-huawei-nova-9-128gb-8gb-black-539.webp", "celular-huawei-nova-9-128gb-8gb-black", "Celulares", 539));
-productos.push(new producto(idUniversal++, "Cel Moto E32 64Gb gris", "./img/cel-tecno/moto-e32-64-gb-gris-4-gb-ram-moto-e32-64-gb-gris-4-gb-ram-189.webp", "moto-e32-64-gb-gris", "Celulares", 189));
-productos.push(new producto(idUniversal++, "Cel Samsung Galaxy S20 fe 5g dual sim 128 Gb", "./img/cel-tecno/samsung-galaxy-s20-fe-5g-dual-sim-128-gb-cloud-white-6-gb-ram-samsung-galaxy-s20-fe-5g-dual-sim-128-gb-cloud-white-6-gb-ram-599.webp", "samsung-galaxy-s20-fe-5g-dual-sim-128-gb", "Celulares", 599));
-productos.push(new producto(idUniversal++, "Tablet con funda Lenovo tab M7 3rd gen", "./img/cel-tecno/tablet-con-funda-lenovo-tab-m7-3rd-gen-tb-7306f-7-32gb-iron-gray-2gb-tablet-con-funda-lenovo-tab-m7-3rd-gen-tb-7306f-7-32gb-iron-gray-2gb-134.webp", "tablet-con-funda-lenovo-tab-m7-3rd-gen", "Celulares", 134));
-productos.push(new producto(idUniversal++, "Cel Xiaomi Redmi 10a dual sim 64Gb plata", "./img/cel-tecno/xiaomi-redmi-10a-dual-sim-64-gb-plata-cromada-3-gb-ram-xiaomi-redmi-10a-dual-sim-64-gb-plata-cromada-3-gb-ram-153.webp", "xiaomi-redmi-10a-dual-sim-64-gb-plata", "Celulares", 153));
-productos.push(new producto(idUniversal++, "Cel Xiaomi Redmi 12c 128 4Gb camara dual 50mpx", "./img/cel-tecno/xiaomi-redmi-12c-128-4-gb-camara-dual-50-mpx-5000-mah-gris-xiaomi-redmi-12c-128-4-gb-camara-dual-50-mpx-5000-mah-gris-184.jpg", "Celulares", "xiaomi-redmi-12c-128-4-gb-camara-dual-50-mpx-5000-mah", 189));
-productos.push(new producto(idUniversal++, "Cel Xiaomi Redmi Note 11s 5g dual sim 128Gb 4Gb RAM", "./img/cel-tecno/xiaomi-redmi-note-11s-5g-dual-sim-128-gb-midnight-black-4-gb-ram-xiaomi-redmi-note-11s-5g-dual-sim-128-gb-midnight-black-4-gb-ram-329.webp", "Celulares", "xiaomi-redmi-note-11s-5g-dual-sim-128-gb-black-4-gb-ram", 329));
+productos.push(new producto(idUniversal++, "Apple Ipad 10 9 10th gen wifi 256Gb pink mpqc3ll", "./img/cel-tecno/apple-ipad-10-9-10th-gen-wifi-256gb-pink-mpqc3ll-a-apple-ipad-10-9-10th-gen-wifi-256gb-pink-mpqc3ll-a-959.webp", "apple-ipad-10-9-10th-gen-wifi-256gb-pink-mpqc3ll", "Celulares y Tecnología", 959));
+productos.push(new producto(idUniversal++, "Apple Watch se 2nd gen gps 44mm starlight temp sense", "./img/cel-tecno/apple-watch-se-2nd-gen-gps-44mm-starlight-aluminum-case-mnte3lla-apple-watch-se-2nd-gen-gps-44mm-starlight-aluminum-case-mnte3lla-479.webp", "apple-watch-se-2nd-gen-gps-44mm-starlight", "Celulares y Tecnología", 479));
+productos.push(new producto(idUniversal++, "Apple Watch series 8 gps 41mm midnigh temp sense", "./img/cel-tecno/apple-watch-series-8-gps-41mm-midnight-aluminum-case-mnu73-mnu83-apple-watch-series-8-gps-41mm-midnight-aluminum-case-mnu73-mnu83-649.webp", "apple-watch-series-8-gps-41mm-midnight", "Celulares y Tecnología", 649));
+productos.push(new producto(idUniversal++, "Cel Samsung Galaxy A04 sm a045mz ds 64Gb", "./img/cel-tecno/cel-samsung-galaxy-a04-sm-a045mz-ds-64gb-green-cel-samsung-galaxy-a04-sm-a045mz-ds-64gb-green-179.webp", "cel-samsung-galaxy-a04-sm-a045mz-ds-64gb", "Celulares y Tecnología", 179));
+productos.push(new producto(idUniversal++, "Cel Samsung Galaxy A525 8Gb 256Gb", "./img/cel-tecno/cel-samsung-galaxy-a525-8gb-256gb-ds-white-cel-samsung-galaxy-a525-8gb-256gb-ds-white-499.webp", "cel-samsung-galaxy-a525-8gb-256gb", "Celulares y Tecnología", 499));
+productos.push(new producto(idUniversal++, "Celular Honor X6 color azul 4Gb 64Gb", "./img/cel-tecno/celular-honor-x6-color-azul-4gb-64gb-celular-honor-x6-color-azul-4gb-64gb-189.webp", "celular-honor-x6-color-azul-4gb-64gb", "Celulares y Tecnología", 189));
+productos.push(new producto(idUniversal++, "Celular Huawei Nova 9 128Gb 8Gb black", "./img/cel-tecno/celular-huawei-nova-9-128gb-8gb-black-celular-huawei-nova-9-128gb-8gb-black-539.webp", "celular-huawei-nova-9-128gb-8gb-black", "Celulares y Tecnología", 539));
+productos.push(new producto(idUniversal++, "Cel Moto E32 64Gb gris", "./img/cel-tecno/moto-e32-64-gb-gris-4-gb-ram-moto-e32-64-gb-gris-4-gb-ram-189.webp", "moto-e32-64-gb-gris", "Celulares y Tecnología", 189));
+productos.push(new producto(idUniversal++, "Cel Samsung Galaxy S20 fe 5g dual sim 128 Gb", "./img/cel-tecno/samsung-galaxy-s20-fe-5g-dual-sim-128-gb-cloud-white-6-gb-ram-samsung-galaxy-s20-fe-5g-dual-sim-128-gb-cloud-white-6-gb-ram-599.webp", "samsung-galaxy-s20-fe-5g-dual-sim-128-gb", "Celulares y Tecnología", 599));
+productos.push(new producto(idUniversal++, "Tablet con funda Lenovo tab M7 3rd gen", "./img/cel-tecno/tablet-con-funda-lenovo-tab-m7-3rd-gen-tb-7306f-7-32gb-iron-gray-2gb-tablet-con-funda-lenovo-tab-m7-3rd-gen-tb-7306f-7-32gb-iron-gray-2gb-134.webp", "tablet-con-funda-lenovo-tab-m7-3rd-gen", "Celulares y Tecnología", 134));
+productos.push(new producto(idUniversal++, "Cel Xiaomi Redmi 10a dual sim 64Gb plata", "./img/cel-tecno/xiaomi-redmi-10a-dual-sim-64-gb-plata-cromada-3-gb-ram-xiaomi-redmi-10a-dual-sim-64-gb-plata-cromada-3-gb-ram-153.webp", "xiaomi-redmi-10a-dual-sim-64-gb-plata", "Celulares y Tecnología", 153));
+productos.push(new producto(idUniversal++, "Cel Xiaomi Redmi 12c 128 4Gb camara dual 50mpx", "./img/cel-tecno/xiaomi-redmi-12c-128-4-gb-camara-dual-50-mpx-5000-mah-gris-xiaomi-redmi-12c-128-4-gb-camara-dual-50-mpx-5000-mah-gris-184.jpg", "xiaomi-redmi-12c-128-4-gb-camara-dual-50-mpx-5000-mah", "Celulares y Tecnología", 189));
+productos.push(new producto(idUniversal++, "Cel Xiaomi Redmi Note 11s 5g dual sim 128Gb 4Gb RAM", "./img/cel-tecno/xiaomi-redmi-note-11s-5g-dual-sim-128-gb-midnight-black-4-gb-ram-xiaomi-redmi-note-11s-5g-dual-sim-128-gb-midnight-black-4-gb-ram-329.webp", "xiaomi-redmi-note-11s-5g-dual-sim-128-gb-black-4-gb-ram", "Celulares y Tecnología", 329));
 
 /*CARGO ELECTRODOMESTICOS A MI ARRAY DE PRODUCTOS*/
 productos.push(new producto(idUniversal++, "Cafetera punktal PK 426", "./img/electrodomesticos/cafetera-punktal-pk-426-caf-semi-automatica-negra-de-filtro-220v-240-cafetera-punktal-pk-426-caf-semi-automatica-negra-de-filtro-220v-240.jpg", "cafetera-punktal-pk-426", "Electrodomesticos", 25));
@@ -86,14 +86,16 @@ productos.push(new producto(idUniversal++, "Xiaomi TV 65\"", "./img/tv-video/xia
 
 
 const contenedorProductos = document.querySelector("#contenedor-productos")
-console.log(contenedorProductos);
+const botonesCat = document.querySelectorAll(".btn-cat")
+const tituloPrincipal = document.querySelector("#titulo-principal");
 
-function cargarProductos() {
+function cargarProductos(productos) {
+    contenedorProductos.innerHTML="";
     productos.forEach(producto => {
         const div = document.createElement("div");
         div.classList.add("producto");
         div.innerHTML = `
-        <img class="producto-imagen" src="${producto.imagen}" alt="${producto.alt}"
+        <img class="producto-imagen" src="${producto.imagen}" alt="${producto.alt}">
         <div class="producto-detalles">
             <h3 class="producto-nombre">${producto.nombre}</h3>
             <p class="producto-precio"><strong>USD ${producto.precio}</strong></p>
@@ -105,5 +107,26 @@ function cargarProductos() {
     
 }
 
-cargarProductos();
+cargarProductos(productos);
+
+
+botonesCat.forEach(boton => {
+    boton.addEventListener("click", (e) => {
+        botonesCat.forEach(boton => boton.classList.remove("active"));
+        e.currentTarget.classList.add("active");
+
+        if (e.currentTarget.id != "Todos"){
+            const productoCategoria = productos.find(producto => producto.categoria ===e.currentTarget.id);
+            tituloPrincipal.innerHTML = productoCategoria.categoria;
+
+            const btnprod = productos.filter(producto => producto.categoria=== e.currentTarget.id);
+            cargarProductos(btnprod);
+        } else {
+            tituloPrincipal.innerHTML = "Todos nuestros productos"
+            cargarProductos(productos)
+            
+        }
+        
+    })
+})
 
