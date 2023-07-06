@@ -88,7 +88,7 @@ productos.push(new producto(idUniversal++, "Xiaomi TV 65\"", "./img/tv-video/xia
 const contenedorProductos = document.querySelector("#contenedor-productos")
 const botonesCat = document.querySelectorAll(".btn-cat")
 const tituloPrincipal = document.querySelector("#titulo-principal");
-
+let botonesAgregar = document.querySelectorAll(".producto-agregar");
 
 function cargarProductos(productos) {
     contenedorProductos.innerHTML="";
@@ -105,10 +105,11 @@ function cargarProductos(productos) {
         `;
         contenedorProductos.append(div);
     });
-    
+    actualizoBotonesAgregar();
 }
 
 cargarProductos(productos);
+
 
 
 botonesCat.forEach(boton => {
@@ -131,3 +132,17 @@ botonesCat.forEach(boton => {
     })
 })
 
+function actualizoBotonesAgregar ( ){
+    botonesAgregar = document.querySelectorAll(".producto-agregar")
+    botonesAgregar.forEach(boton=> {
+        boton.addEventListener("click", agregarAlCarrito)
+    })
+}
+
+const carrito = [];
+function agregarAlCarrito(e){
+    const idbtn = e.currentTarget.id;
+    const productoAAgregar = productos.find(producto => producto.id === parseInt(idbtn));
+    carrito.push(productoAAgregar)
+    console.log(carrito)
+}
