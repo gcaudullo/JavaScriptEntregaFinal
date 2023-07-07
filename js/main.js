@@ -89,6 +89,7 @@ const contenedorProductos = document.querySelector("#contenedor-productos")
 const botonesCat = document.querySelectorAll(".btn-cat")
 const tituloPrincipal = document.querySelector("#titulo-principal");
 let botonesAgregar = document.querySelectorAll(".producto-agregar");
+const cantPrdEnCarrito = document.querySelector("#numero");
 
 function cargarProductos(productos) {
     contenedorProductos.innerHTML="";
@@ -141,8 +142,22 @@ function actualizoBotonesAgregar ( ){
 
 const carrito = [];
 function agregarAlCarrito(e){
-    const idbtn = e.currentTarget.id;
-    const productoAAgregar = productos.find(producto => producto.id === parseInt(idbtn));
-    carrito.push(productoAAgregar)
-    console.log(carrito)
+    const idBtn = e.currentTarget.id;
+    const productoAAgregar = productos.find(producto => producto.id === parseInt(idBtn));
+    
+    if(carrito.some(producto => producto.id === parseInt(idBtn))){
+        const index = carrito.findIndex(producto => producto.id === parseInt(idBtn));
+        carrito[index].cantidad++;
+
+    } else {
+        productoAAgregar.cantidad = 1;
+        carrito.push(productoAAgregar);
+    }  
+    actualizoCantPrdEnCarrito();
+    localStorage.setItem("carrito", JSON.stringify(carrito));
+}
+
+function actualizoCantPrdEnCarrito(){
+    let prdEnCarrito = carrito.reduce( (acc, producto)=> acc + producto.cantidad, 0);
+    numero.innerText=prdEnCarrito;
 }

@@ -89,7 +89,7 @@ aside {
     position: relative;
 }
 
-.boton-menu.active::before {
+/* .boton-menu.active::before {
     content: '';
     position: absolute;
     width: 1rem;
@@ -111,7 +111,7 @@ aside {
     background-color: transparent;
     border-top-right-radius: 0.5rem;
     box-shadow: 0 -1rem 0 var(--clr-white);
-}
+} */
 
 .boton-carrito {
     margin-top: 2rem;
