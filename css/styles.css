@@ -3,8 +3,8 @@
 :root {
     --clr-main: #110c29;
     --clr-main-ligth: #0c4723;
-    --clr-white: #f7fafa;
-    --clr-gray: #dbedf1d5;
+    --clr-white: #d9fffe;
+    --clr-gray: #c2e6eed5;
     --clr-red: #df2d15;
 }
 
@@ -58,7 +58,7 @@ aside {
 
 .logo {
     font-weight: 400;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 
 .menu {
@@ -77,7 +77,7 @@ aside {
     gap: 1rem;
     font-weight: 200;
     padding: 1rem;
-    font-size: 1rem;
+    font-size: 1.3rem;
     width: 100%;
 }
 
@@ -150,10 +150,12 @@ main {
 
 .producto-nombre {
     font-size: 1.15rem;
+    font-weight: 100;
 }
 
 .producto-precio {
     font-size: 1.15rem;
+    font-weight: 100;
 }
 
 .producto-agregar {
@@ -166,6 +168,7 @@ main {
     cursor: pointer;
     border: 2px solid var(--clr-white);
     transition: background-color 0.2s, color 0.2s;
+    font-weight: 100;
 }
 
 .producto-agregar:hover {
