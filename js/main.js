@@ -140,7 +140,15 @@ function actualizoBotonesAgregar ( ){
     })
 }
 
-const carrito = [];
+let carrito
+const carritoLStorage = JSON.parse(localStorage.getItem("carrito"));
+if(carritoLStorage){
+    carrito = carritoLStorage;
+    actualizoCantPrdEnCarrito();
+}else{
+    carrito = [];
+}
+
 function agregarAlCarrito(e){
     const idBtn = e.currentTarget.id;
     const productoAAgregar = productos.find(producto => producto.id === parseInt(idBtn));
