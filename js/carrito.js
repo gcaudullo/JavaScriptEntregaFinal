@@ -20,29 +20,30 @@ function actualizarCarrito() {
         carritoProductos.innerHTML = "";
 
         carrito.forEach(producto => {
+            const { id: id, imagen: imagen, alt: alt, nombre: nombre, precio: precio, cantidad: cantidad } = producto
             const div = document.createElement("div");
             div.classList.add("carrito-producto");
             div.innerHTML = `
                 <img class="producto-imagen-carrito"
-                    src="${producto.imagen}"
-                    alt="${producto.alt}">
+                    src="${imagen}"
+                    alt="${alt}">
                 <div class="carrito-producto-titulo">
                     <small>Título</small>
-                    <h3 class="producto-nombre">${producto.nombre}</h3>
+                    <h3 class="producto-nombre">${nombre}</h3>
                 </div>
                 <div class="carrito-producto-cantidad">
                     <small>CANTIDAD</small>
-                    <p>${producto.cantidad}</p>
+                    <p>${cantidad}</p>
                 </div>
                 <div class="carrito-producto-precio">
                     <small>Precio</small>
-                    <p>USD ${producto.precio}</p>
+                    <p>USD ${precio}</p>
                 </div>
                 <div class="carrito-producto-subtotal">
                     <small>Subtotal</small>
-                    <p>USD ${producto.cantidad * producto.precio}</p>
+                    <p>USD ${cantidad * precio}</p>
                 </div>
-                <button id="${producto.id}" class="carrito-producto-eliminar"><i class="bi bi-trash3-fill"></i></button>
+                <button id="${id}" class="carrito-producto-eliminar"><i class="bi bi-trash3-fill"></i></button>
             `;
             carritoProductos.append(div);
         })
@@ -68,12 +69,8 @@ function actualizoBotonesEliminar() {
 
 function eliminarDelCarrito(e) {
     const idBtn = e.currentTarget.id;
-    const index = carrito.findIndex(producto => producto.id === parseInt(idBtn))
-    if (carrito[index].cantidad > 1) {
-        carrito[index].cantidad--;
-    } else {
-        carrito.splice(index, 1)
-    }
+    const index = carrito.findIndex(producto => producto.id === parseInt(idBtn));
+    (carrito[index].cantidad > 1) ? carrito[index].cantidad-- : carrito.splice(index, 1);
     actualizarCarrito()
     localStorage.setItem("carrito", JSON.stringify(carrito));
 }
@@ -86,9 +83,24 @@ function actualizoBotonesAgregar() {
 }
 
 btnVaciar.addEventListener("click", () => {
-    carrito.splice(0, carrito.length)
-    actualizarCarrito()
-    localStorage.setItem("carrito", JSON.stringify(carrito));
+    Swal.fire({
+        title: 'Está seguro de querer vaciar el carrito?',
+        text: "",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Sí!'
+    }).then((result) => {
+        if (result.isConfirmed) {
+            Swal.fire(
+                'Carrito vaciado.'
+            )
+            carrito.splice(0, carrito.length)
+            actualizarCarrito()
+            localStorage.setItem("carrito", JSON.stringify(carrito));
+        }
+    })
 })
 
 

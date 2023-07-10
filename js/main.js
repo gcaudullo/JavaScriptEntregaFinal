@@ -94,14 +94,15 @@ const cantPrdEnCarrito = document.querySelector("#numero");
 function cargarProductos(productos) {
     contenedorProductos.innerHTML="";
     productos.forEach(producto => {
+        const { id : id, imagen: imagen, alt : alt, nombre : nombre, precio: precio} = producto
         const div = document.createElement("div");
         div.classList.add("producto");
         div.innerHTML = `
-        <img class="producto-imagen" src="${producto.imagen}" alt="${producto.alt}">
+        <img class="producto-imagen" src="${imagen}" alt="${alt}">
         <div class="producto-detalles">
-            <h3 class="producto-nombre">${producto.nombre}</h3>
-            <p class="producto-precio"><strong>USD ${producto.precio}</strong></p>
-            <button class="producto-agregar" id="${producto.id}">Agregar</button>
+            <h3 class="producto-nombre">${nombre}</h3>
+            <p class="producto-precio"><strong>USD ${precio}</strong></p>
+            <button class="producto-agregar" id="${id}">Agregar</button>
         </div>
         `;
         contenedorProductos.append(div);
@@ -163,6 +164,20 @@ function agregarAlCarrito(e){
     }  
     actualizoCantPrdEnCarrito();
     localStorage.setItem("carrito", JSON.stringify(carrito));
+    Toastify({
+        text: `El Producto ${productoAAgregar.nombre} \n fue agregado al carrito`,
+        duration: 3000,
+        destination: "../carrito.html",
+        newWindow: true,
+        close: true,
+        gravity: "top", // `top` or `bottom`
+        position: "left", // `left`, `center` or `right`
+        stopOnFocus: true, // Prevents dismissing of toast on hover
+        style: {
+          background: "linear-gradient(to right, #00b09b, #96c93d)",
+        },
+        onClick: function(){} // Callback after click
+      }).showToast();
 }
 
 function actualizoCantPrdEnCarrito(){
