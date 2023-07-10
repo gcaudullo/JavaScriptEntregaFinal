@@ -83,24 +83,18 @@ function actualizoBotonesAgregar() {
 }
 
 btnVaciar.addEventListener("click", () => {
+    carrito.splice(0, carrito.length)
+    actualizarCarrito()
+    localStorage.setItem("carrito", JSON.stringify(carrito));
     Swal.fire({
-        title: 'Está seguro de querer vaciar el carrito?',
-        text: "",
-        icon: 'warning',
-        showCancelButton: true,
-        confirmButtonColor: '#3085d6',
-        cancelButtonColor: '#d33',
-        confirmButtonText: 'Sí!'
-    }).then((result) => {
-        if (result.isConfirmed) {
-            Swal.fire(
-                'Carrito vaciado.'
-            )
-            carrito.splice(0, carrito.length)
-            actualizarCarrito()
-            localStorage.setItem("carrito", JSON.stringify(carrito));
+        title: 'Su carrito ha sido vaciado!',
+        showClass: {
+          popup: 'animate__animated animate__fadeInDown'
+        },
+        hideClass: {
+          popup: 'animate__animated animate__fadeOutUp'
         }
-    })
+      })
 })
 
 
