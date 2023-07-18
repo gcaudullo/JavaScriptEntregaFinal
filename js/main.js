@@ -19,7 +19,7 @@ async function cargoArrayProductos() {
         const data = await response.json();
         productos = data;
         console.log(productos);
-        cargarProductos();
+        cargarProductos(productos);
     }
     catch (error) {
         console.log("Error al cargar productos:", error)
@@ -110,15 +110,15 @@ function agregarAlCarrito(e) {
     localStorage.setItem("carrito", JSON.stringify(carrito));
     Toastify({
         text: `El Producto ${productoAAgregar.nombre} \n fue agregado al carrito`,
-        duration: 3000,
-        destination: "../carrito.html",
+        duration: 1500,
         newWindow: true,
         close: true,
         gravity: "top", // `top` or `bottom`
         position: "right", // `left`, `center` or `right`
         stopOnFocus: true, // Prevents dismissing of toast on hover
         style: {
-            background: "linear-gradient(to right, #00b09b, #96c93d)",
+            background: "linear-gradient(to right, #110c29, #0c4723)",
+            borderRadius: "2rem" 
         },
         onClick: function () { } // Callback after click
     }).showToast();

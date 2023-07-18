@@ -73,6 +73,20 @@ function eliminarDelCarrito(e) {
     (carrito[index].cantidad > 1) ? carrito[index].cantidad-- : carrito.splice(index, 1);
     actualizarCarrito()
     localStorage.setItem("carrito", JSON.stringify(carrito));
+    Toastify({
+        text: `El Producto fue eliminado del carrito`,
+        duration: 1500,
+        newWindow: true,
+        close: true,
+        gravity: "top", // `top` or `bottom`
+        position: "right", // `left`, `center` or `right`
+        stopOnFocus: true, // Prevents dismissing of toast on hover
+        style: {
+            background: "linear-gradient(to right, #110c29, #0c4723)",
+            borderRadius: "2rem" 
+        },
+        onClick: function () { } // Callback after click
+    }).showToast();
 }
 
 function actualizoBotonesAgregar() {
