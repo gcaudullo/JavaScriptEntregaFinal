@@ -90,10 +90,6 @@ aside {
 }
 
 
-.boton-carrito {
-    margin-top: 2rem;
-}
-
 .numero {
     background-color: var(--clr-white);
     color: var(--clr-main);
@@ -265,6 +261,40 @@ main {
     border-bottom-left-radius: 1rem;
     gap: 1rem;
 }
+
+.Envio {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border-radius: 20px;
+    background-color: var(--clr-gray);
+    color: var(--clr-main);
+}
+
+.nombre {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.telefono {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.direccion-envio {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+
 
 .deshabilitar {
     display: none;

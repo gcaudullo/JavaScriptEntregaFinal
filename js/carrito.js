@@ -83,7 +83,7 @@ function eliminarDelCarrito(e) {
         stopOnFocus: true, // Prevents dismissing of toast on hover
         style: {
             background: "linear-gradient(to right, #110c29, #0c4723)",
-            borderRadius: "2rem" 
+            borderRadius: "2rem"
         },
         onClick: function () { } // Callback after click
     }).showToast();
@@ -103,12 +103,12 @@ btnVaciar.addEventListener("click", () => {
     Swal.fire({
         title: 'Su carrito ha sido vaciado!',
         showClass: {
-          popup: 'animate__animated animate__fadeInDown'
+            popup: 'animate__animated animate__fadeInDown'
         },
         hideClass: {
-          popup: 'animate__animated animate__fadeOutUp'
+            popup: 'animate__animated animate__fadeOutUp'
         }
-      })
+    })
 })
 
 
@@ -120,12 +120,52 @@ function calculoTotal() {
 }
 
 btnComprar.addEventListener("click", () => {
-    carrito.splice(0, carrito.length)
-    localStorage.setItem("carrito", JSON.stringify(carrito));
-    carritoVacio.classList.add("deshabilitar");
-    carritoProductos.classList.add("deshabilitar");
-    carritoAcciones.classList.add("deshabilitar");
-    carritoComprado.classList.remove("deshabilitar");
+
+    Swal.fire({
+        title: 'Ingrese nombre, telefono y dirección de envío',
+        html: `
+        <form class="Envio" action="">
+                <div class="nombre">
+                    <label for="nombre">Nombre y Apellido:</label>
+                    <input class="form-control" id="nombre" type="text">
+                </div>
+
+                <div class="telefono">
+                    <label for="telefono">Tel/Cel:</label>
+                    <input class="form-control" id="telefono" type="number">
+                </div>
+
+                <div class="direccion-envio">
+                    <label for="direccion">Dirección de Envío:</label>
+                    <input class="form-control" id="direccion" type="text"></input>
+                </div>
+        </form>
+        `,
+        showCancelButton: true,
+        cancelButtonText: 'Seguir Comprando',
+        confirmButtonText: 'Ir al Pago',
+        showLoaderOnConfirm: true,
+        allowOutsideClick: () => !Swal.isLoading()
+    }).then((result) => {
+        if (result.isConfirmed) {
+            let numOrden = Math.random()*1000000;
+            Swal.fire({
+                icon: 'success',
+                title: `Muchas gracias por su compra\n Se generó la orden de compra ${Math.trunc(numOrden)}`,
+                //
+                showConfirmButton: true,
+                confirmButtonText: 'OK!',
+            })
+            carrito.splice(0, carrito.length)
+            localStorage.setItem("carrito", JSON.stringify(carrito));
+            carritoVacio.classList.add("deshabilitar");
+            carritoProductos.classList.add("deshabilitar");
+            carritoAcciones.classList.add("deshabilitar");
+            carritoComprado.classList.remove("deshabilitar");
+        }
+    })
+
+
 
 })
 
